@@ -35,7 +35,7 @@ pipeline {
       steps {
         echo 'Testing..'
         withCredentials(bindings: [sshUserPrivateKey(credentialsId: 'jk_dev', keyFileVariable: 'key')]) {
-          withCredentials([file(credentialsId: 'lora-tb-connector-env', variable: 'env')]){
+          withCredentials([file(credentialsId: 'nb-tb-connector-env', variable: 'env')]){
             withCredentials([usernamePassword(credentialsId: 'docker-hub', usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD')]) {
               script {
                 rc = sh(script: "./test.sh", returnStatus: true)
