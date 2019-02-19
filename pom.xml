@@ -6,7 +6,7 @@
 
 	<groupId>it.smartcommunitylab</groupId>
 	<artifactId>nb-tb-connector</artifactId>
-	<version>0.1</version>
+	<version>0.2</version>
 	<packaging>jar</packaging>
 
 	<name>nb-tb-connector</name>
@@ -62,7 +62,7 @@
 			<groupId>org.apache.commons</groupId>
 			<artifactId>commons-lang3</artifactId>
 		</dependency>
-		
+
 		<!-- dev/test -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
